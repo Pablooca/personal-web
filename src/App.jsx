@@ -6,13 +6,21 @@
 
 import React from "react";
 import Header from "./Components/Header";
+const siteProps = {
+  name: "Pablo Oca Galeano",
+  title: "Junior Back-End Developer",
+  email: "pabloocagal03@gmail.com",
+};
+
+// ...
 
 const App = () => {
   return (
     <>
       <Header />
-      <h3>Built using Codespaces! 🥳</h3>
-      <p>Follow instructions in README to utilize this template for your site or class.</p>
+      <h3>{siteProps.name}</h3>
+      <p>{siteProps.title}</p>
+      <p>{siteProps.email}</p>
     </>
   );
 };
